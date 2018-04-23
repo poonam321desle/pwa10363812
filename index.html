@@ -1,46 +1,33 @@
-<!--
- Copyright 2016 Google Inc.
- 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- 
-      http://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Show</title>
+  <title>Book My Movie</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
   <link rel="stylesheet" type="text/css" href="styles/custom.css">
 
   <!-- TODO add manifest here -->
   <link rel="manifest" href="/manifest.json">
-  <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Book Show">
   <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <meta name="msapplication-TileColor" content="#000">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src= "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script src= "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+<style> body{ background-color: #e6e600;}
+hr {
+      border-top: 1px solid #000;
 
+}</style>
   </head>
    <!-- <header class="header">
     <h1 class="header__title">Show Times of Movies</h1>
@@ -53,17 +40,18 @@
                 You are now online.
             </div>
         </div>
-        <div class="container" style="display: none;" id="alertDiv">
+        <div class="container" style="display:none;" id="alertDiv">
             <div class="alert alert-warning alert-dismissible">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 <strong>Offline!</strong> Your App is offline
             </div>
         </div>
-        
+		
+		   
         <div class="container" id="mainDiv">
             
             <div class="page-header">
-                <h1>Show Times at Movies</h1>      
+                <h1>BOOK My MOVIE</h1>    
             </div>
             <div>
                 <ul class="nav nav-tabs">
@@ -77,11 +65,25 @@
                 <!-- <ul class="list-group" id="movieList">
                 </ul> -->
             </div>
-
+<marquee>Upcoming movies #Insidious #The Leisure Seeker #The Cured #The Guernsey Literary and Potato Peel Pie Society  </marquee>
         </div>
-		<hr>
 		
-		<div id="contact" class="container">
+		
+		
+		 
+<div class="container" id="mainDiv"><hr>
+<!-- Add Google Maps -->
+<div id="googleMap">
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBTtPEE-z2JG-jE4Dk29s2dxybyR4Xukro'></script><div style='overflow:hidden;height:400px;width:1120px;'><div id='gmap_canvas' style='height:400px;width:1120px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.org/'>how to add a google map to a website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=b527ca411228ac298327bf07bd6c74682b4b6a82'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(53.3437466,-6.264653299999964),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53.3437466,-6.264653299999964)});infowindow = new google.maps.InfoWindow({content:'<strong>Book My Movie</strong><br>South George<br>06510 Dublin<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+</div></div>
+
+
+		
+		
+		
+		<div class="container" id="mainDiv"><hr><hr>
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
 
@@ -110,35 +112,20 @@
       </div><br>
     </div>
 
-    <div class="col-sm-2"><h5>Connect us on:</h5></div>
-				<div class="col-sm-2"> <a target="_blank" href="https://www.facebook.com/MoviesatDundrum/"><img src="http://movies-at.ie/images/facebook-icon.png" class="icon" /></a></div>
-				<div class="col-sm-2">	<a target="_blank" href="https://twitter.com/MoviesDundrum"><img src="http://movies-at.ie/images/twitter-icon.png" class="icon" /></a></div>
-				<div class="col-sm-2">	<a target="_blank" href="https://plus.google.com/u/0/116420891815481034917/"><img src="http://movies-at.ie/images/googleplus-icon.png" class="icon" /></a></div>
-					<div class="col-sm-2"><a target="_blank" href="https://www.youtube.com/c/MoviesatIeDUNDRUM"><img src="http://movies-at.ie/images/youtube-icon.png" class="icon" /></a></div>
+    <div class="container" id="mainDiv">
+				<div class="col-sm-3"> <a target="_blank" href="https://www.facebook.com/MoviesatDundrum/"><img src="http://movies-at.ie/images/facebook-icon.png" class="icon" /></a></div>
+				<div class="col-sm-3">	<a target="_blank" href="https://twitter.com/MoviesDundrum"><img src="http://movies-at.ie/images/twitter-icon.png" class="icon" /></a></div>
+				<div class="col-sm-3">	<a target="_blank" href="https://plus.google.com/u/0/116420891815481034917/"><img src="http://movies-at.ie/images/googleplus-icon.png" class="icon" /></a></div>
+					<div class="col-sm-3"><a target="_blank" href="https://www.youtube.com/c/MoviesatIeDUNDRUM"><img src="http://movies-at.ie/images/youtube-icon.png" class="icon" /></a></div>
 
-  <hr></div>
   </div>
- 
-<div class="container" id="mainDiv">
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-  }
-</script>
+  
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWLeHkBA-0KjR8mB0gVUnFPGeGM8hu8Is&callback=myMap"></script>
-
-</div>
+</div><br><hr>
 		
         <div class="container" id="secondDiv" style="display: none;">
           <br>
-          <br>
+          <br><hr>
             <div class ="col-md-12">
                 <ul class="checkbox">
                   <li><input type="checkbox" name="">BUY 1 CHICKEN/VEGGIE STEAMED MOMOS</li>
@@ -151,7 +138,7 @@ function myMap() {
                 </div>
                 <div class="col-md-2" >
                     <button type="button" class="btn btn-primary" name="" id="proceed">Proceed</button>
-                  
+                  <br><br><br>
                 </div>
             </div>
            
@@ -160,7 +147,7 @@ function myMap() {
         <div class="container" id="thirdDiv" style="display: none;">
             <div class="col-md-12">
                 <br>
-                <br>
+                <br><hr>
                 <div class="col-md-6">
                     <div class="col-md-12" >
                         <div class="col-md-6">
@@ -386,14 +373,12 @@ function myMap() {
                             <button class="btn btn-default" id="cancelBooking">Cancel</button>
                             </div>
                          </center>
-                    </div>
+                    <br><br><br></div>
                 </div>
-            </div>
+            </div><hr><hr>
             
-            
+		</div>       
 
-       <!--  </div> -->
-        <!-- Uncomment the line below when ready to test with fake data -->
         <script src="scripts/app.js" async></script>
     </body>
 </html>
